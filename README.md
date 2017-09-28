@@ -73,6 +73,11 @@ function compress()
 ### 4.- Verificar cambios.
 Guarde los cambios realizados y verifique el código fuente de su página web desde el navegador.
 
+> Si no notas los resultados, 
+> por favor borra la cache de tu navegador
+> y vuelve a verificar el código fuente.
+
+
 #### Referencia.
 
 [Compress-HTML-output](https://github.com/bcit-ci/CodeIgniter/wiki/Compress-HTML-output)
