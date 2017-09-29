@@ -8,7 +8,7 @@ Podemos utilizar multiples herramientas online, preprocesadores, entre otros par
 
 En el archivo de configuración `aplication/config/config.php` modificar la variable enable_hooks de `FALSE` a `TRUE`.
 
-```sh
+``` php
 $config['enable_hooks'] = TRUE;
 ```
 
@@ -16,7 +16,7 @@ $config['enable_hooks'] = TRUE;
 
 Ubicar los el archivo `aplication/config/hooks.php` y adicionar las siguientes líneas de código:
 
-```sh
+``` php
 $hook['display_override'][] = array(
 	'class' => '',
 	'function' => 'compress',
@@ -29,7 +29,7 @@ $hook['display_override'][] = array(
 
 Crear el archivo `aplication/hooks/compress.php` y pegar el siguiente código php:
 
-```sh
+``` php
 <?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 function compress()
 {
